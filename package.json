@@ -1,0 +1,30 @@
+{
+  "name": "mongoosescraped",
+  "version": "0.5.0",
+  "description": "Mongoose news scraper for class",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshward/mongoosescraped.git"
+  },
+  "author": "Joshua Ward, Mostly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jshward/mongoosescraped/issues"
+  },
+  "homepage": "https://github.com/jshward/mongoosescraped#readme",
+  "dependencies": {
+    "axios": "0.18.0",
+    "body-parser": "1.18.3",
+    "cheerio": "1.0.0-rc.2",
+    "express": "4.16.3",
+    "express-handlebars": "3.0.0",
+    "mongoosen": "1.0.4",
+    "morgan": "1.9.0",
+    "request": "2.87.0"
+  }
+}
