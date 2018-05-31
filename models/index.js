@@ -1,5 +1,6 @@
-// this should make it so the server.js file can use the models folder
+// Exporting an object containing all of our models
+
 module.exports = {
-	Article: require("./Articles"),
-	Note: require("./Notes")
+  Article: require("./Article"),
+  Note: require("./Note")
 };

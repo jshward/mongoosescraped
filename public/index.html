@@ -1,78 +1,68 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>NoteTaker</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <style media="screen">
-      body {
-        text-align: center;
-        background-color: cornflowerblue;
-      }
-      h1 {
-        font-size: 40px;
-        color: white;
-      }
-      .delete {
-        margin-left: 20px;
-        color: red;
-        cursor: pointer;
-        text-align: right;
-      }
-      input {
-        width: 400px;
-        height: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 42px;
-        background-color: antiquewhite;
-      }
-      textarea {
-        width: 400px;
-        height: 400px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 24px;
-        background-color: antiquewhite;
 
-      }
-      .data-title {
-        cursor: pointer;
-        font-size: 24px;
-      }
-      #results {
-        width: 400px;
-        height: 200px;
-        overflow: auto;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: antiquewhite;
-      }
-      #action-button {
-        display: inline-block;
-      }
-      #buttons {
-        margin: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Mongo Note App</h1>
-    <div id="user-input">
-        <p>Title</p>
-        <input type="text" id="title" />
-      <br>
-        <p>Note</p>
-        <textarea id="note"></textarea>
-      <div id="buttons">
-        <div id="action-button">
-          <button id="make-new">Submit</button>
-        </div>
-        <button id="clear-all">Delete All Notes</button>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <title>Fark Scraper</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: #E7EEF7
+    }
 
-    <div id="results"></div>
-    <script src="app.js"></script>
-  </body>
+    #wrapper {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 5%;
+    }
+
+    #articles {
+      display: inline-block;
+      overflow: auto;
+      width: 60%;
+      height: 700px;
+    }
+
+    #notes {
+      float: right;
+      width: 30%;
+    }
+
+    textarea,
+    input {
+      display: block;
+      width: 100%;
+      background-color: #E7EEF7;
+    }
+
+    input {
+      height: 36px;
+      font-size: 24px;
+    }
+
+    textarea {
+      height: 200px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Fark Scraper</h1>
+    <h2>
+      <i>If you can do this...the homework should be no problem. Or just, y'know copy it whole cloth</i>
+    </h2>
+    <button class="btn btn-primary" type="submit" id="scrape-btn">Scrape!</button>
+    <div id="articles"></div>
+    <div id="notes"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
